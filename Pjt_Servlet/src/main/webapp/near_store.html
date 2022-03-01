@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style>
+@font-face {
+   font-family: 'SANJUGotgam';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff')
+      format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100px;
+   background-color: #e3e3e3;
+}
+
+.nav-menu a {
+   font-family: 'SANJUGotgam';
+   font-size: 20px;
+   text-decoration: none;
+   position: relative;
+   padding: 6px 12px;
+   color: black;
+}
+
+.nav-menu a::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 4px;
+   background: #40E0D0;
+   transition: all .5s ease-out;
+}
+
+.nav-menu a:hover::after {
+   width: 100%;
+}
+
+#wrap {
+  font-family: 'IM_Hyemin-Bold';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+#wrap h2{
+   margin-bottom: 100px;
+   border-bottom: thick double #32a1ce;
+}
+
+</style>
+</head>
+
+<body>
+   <nav class="nav-menu">
+      <a href="index.html">HOME</a>
+      <a href="insert.html">회원가입</a>
+      <a href="list.do">회원목록</a>
+      <a href="near_store.html">주변맛집</a>
+   </nav>
+   <div id = "wrap">
+      <h2>우리들의 점심</h2>
+      <div class = "store">
+         <a href="https://map.naver.com/v5/entry/place/13149692?c=14140748.5449753,4508175.1079668,15,0,0,0,dh&placePath=%3Fentry=plt">
+            <h3>초선과여포</h3>
+         </a>
+         
+         <div class = "store_image">
+            
+         </div>
+      </div>
+      
+      <div class = "store">
+         <a href="https://map.naver.com/v5/search/%EC%98%A4%EB%8A%98%ED%86%B5%EB%8B%AD/place/1417398034?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14135496.5839705,4506189.5408103,15,0,0,0,dh">
+            <h3>오늘통닭</h3>
+         </a>
+         
+         
+         <div class = "store_image">
+            <img src="" />
+         </div>
+         
+      </div>
+      
+      <div class = "store">
+         <a href="https://map.naver.com/v5/search/%ED%95%98%EB%82%98%EC%9A%B0%EB%8F%99/place/19712875?placePath=%3Fentry=pll%26from=nx%26fromNxList=true">
+            <h3>하나우동</h3>
+         </a>
+         
+         <div class = "store_image">
+            
+         </div>
+      
+      </div>
+      
+      <div class = "store">
+         <a href="https://map.naver.com/v5/entry/place/20767050?c=14140637.6277665,4508331.2275120,15,0,0,0,dh&placePath=%3Fentry=plt">
+            <h3>한돈애</h3>
+         </a>
+         
+         <div class = "store_image">
+            
+         </div>
+      
+      </div>
+      
+      <div class = "store">
+         
+         <a href="https://map.naver.com/v5/entry/place/1125259502?c=14140722.5219936,4508226.1694199,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt">
+            <h3>살롱주막집</h3>
+         </a>
+         <div class = "store_image">
+            
+         </div>
+      </div>
+      
+
+   </div>
+   
+   
+</body>
+</html>

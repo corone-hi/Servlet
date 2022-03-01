@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type"
+   content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+
+<style type="text/css">
+@font-face {
+   font-family: 'SANJUGotgam';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff')
+      format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+   font-family: 'SANJUGotgam';
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100px;
+   background-color: #e3e3e3;
+}
+
+.nav-menu a {
+   font-family: 'SANJUGotgam';
+   font-size: 20px;
+   text-decoration: none;
+   position: relative;
+   padding: 6px 12px;
+   color: black;
+}
+
+.nav-menu a::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 4px;
+   background: #40E0D0;
+   transition: all .5s ease-out;
+}
+
+.nav-menu a:hover::after {
+   width: 100%;
+}
+
+.input {
+   width: 50%;
+   height: 25px;
+   border: none;
+   /*    border-bottom: 1px solid black; */
+   margin-top: 15px;
+   margin-bottom: 15px;
+   border-radius: 5px;
+}
+
+input::placeholder {
+   opacity: 0.5;
+   text-align: center;
+}
+
+.inputBtn {
+   margin-top:15px;
+   width: 140px;
+   height: 30px;
+   border: solid 2px white;
+   border-radius: 5px;
+   background-color: #5ad3c0;
+   color: white;
+   
+}
+.inputBtn:hover {
+   color: orange;
+   border: solid 2px orange;
+}
+
+
+</style>
+
+
+
+</head>
+<div>
+   <nav class="nav-menu"> <a href="index.html">HOME</a> <a
+      href="insert.html">회원가입</a> <a href="list.do">회원목록</a> <a href="">주변맛집</a>
+   </nav>
+</div>
+
+
+<body style="margin: 0px;">
+   <div
+      style="width: 30%; height: 600px; margin-top: 80px; margin-left: 34%; background-color: #5ad3c0; text-align: center; padding-top: 5%; border-radius: 30px;">
+      <p style="font-size: 30px; color: #ffffff; margin: 0px;">
+         <span> 회원가입을 시작해 볼까요? </span>
+      </p>
+      <div style="padding-bottom: 50px; margin-top: 50px;">
+         <form method="post" action="abc" style="text-align: -webkit-center;">
+            <fieldset id="regbox" style="text-align: center; border: none;">
+               <input class="input input_id" type="text" name="id" required="true" maxlength="20" title="공백 제외한 20자 미만으로 작성해주세요." pattern="^[\S]+$" placeholder="아이디를 입력해주세요." /> <br /> 
+               <input class="input input_pw" type="password" name="pwd" required="true" maxlength="20" title="20자 미만으로 작성해주세요." pattern="^[\S]+$" placeholder="비밀번호를 입력해주세요." /><br />
+               <input class="input input_pwc" type="password" name="pwdc" required="true" maxlength="20" title="20자 미만으로 작성해주세요." pattern="^[\S]+$" placeholder="비밀번호를 한번 더 입력해주세요." /><br /> 
+               <input class="input input_email" type="email" name="email" required="true" maxlength="30" title="30자 미만의 이메일 주소만 사용가능합니다." pattern="^[\S]+@.+[.][\S]+$" placeholder="ex) hogildong@gmail.com" /><br />
+               <input class="input input_phone" type="tel" name="phone" pattern="^[0-9]{3}-[0-9]{4}-[0-9]{4}$" title="지정된 양식을 지켜주세요." required="true" placeholder="ex) 010-1234-5678" /><br />
+               <button class="inputBtn" type="submit" value="가입">가입</button>
+               <button class="inputBtn" type="reset" value="취소">취소</button>
+            </fieldset>
+         </form>
+      </div>
+   </div>
+
+</body>
+
+</html>

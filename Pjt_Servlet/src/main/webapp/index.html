@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0">
+      <title>Insert title here</title>
+      <style>
+         @font-face {
+            font-family: 'SANJUGotgam';
+            src:
+               url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff')
+               format('woff');
+            font-weight: normal;
+            font-style: normal;
+         }
+         
+         @font-face {
+             font-family: 'HSYuji-Regular';
+             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+             font-weight: normal;
+             font-style: normal;
+         }
+         
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         
+         .nav-menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #e3e3e3;
+         }
+         
+         .nav-menu a {
+            font-family: 'SANJUGotgam';
+            font-size: 20px;
+            text-decoration: none;
+            position: relative;
+            padding: 6px 12px;
+            color: black;
+         }
+         
+         .nav-menu a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 4px;
+            background: #40E0D0;
+            transition: all .5s ease-out;
+         }
+         
+         .nav-menu a:hover::after {
+            width: 100%;
+         }
+         
+         #wrap h2{
+            text-align:center;
+            font-family: 'HSYuji-Regular';
+         }
+         
+         #group{
+         
+            font-size: 50px;
+            color: #fffb19;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+         
+         }
+         
+         #one{
+            color: #8bab89;
+         }
+         
+         
+         #two{
+            color: #ffabf7;
+         
+         }
+         
+         #three{
+            color: #c8b9eb;
+         }
+         
+         #four{
+            color: #bfd9ff;   
+         
+         }
+         #five{
+            color: #7df0dd;   
+         
+         }
+      </style>
+   </head>
+
+   <body>
+      <nav class="nav-menu">
+         <a href="index.html">HOME</a>
+         <a href="insert.html">회원가입</a>
+         <a href="list.do">회원목록</a>
+         <a href="near_store.html">주변맛집</a>
+      </nav>
+      <br/>
+      <br/>
+      <br/>
+      <div id ="wrap" >
+            <h2 id="group">2조</h2>
+            <br/><hr/><hr/><br/>
+            <h2 id="one">코드로 말한다 남궁윤호</h2>
+            <br/>
+            <h2 id="two">14살 허예인</h2>
+            <br/>
+            <h2 id="three">하드캐리 최최최</h2>
+            <br/>
+            <h2 id="four">숙명여대 퀸카 김아현</h2>
+            <br/>
+            <h2 id="five">강한남자 이윤성</h2>
+      </div>
+   </body>
+</html>
